@@ -1,3 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="0.057" tests="0" skipped="0" failures="0" errors="0">
+<testsuite name="Cucumber" time="37.913" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="first feature file" name="TC_01_iphone_search" time="20.012">
+<system-out><![CDATA[
+Given user is on the google home page.......................................passed
+When user search for iPhone.................................................passed
+Then verify page title contains iPhone......................................passed
+Then close the application..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="first feature file" name="TC_02_teapot_search" time="17.581">
+<system-out><![CDATA[
+Given user is on the google home page.......................................passed
+When user search for TeaPot.................................................passed
+Then verify page title contains TeaPot......................................passed
+Then close the application..................................................passed
+]]></system-out>
+</testcase>
 </testsuite>
