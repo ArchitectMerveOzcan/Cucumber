@@ -1,7 +1,9 @@
 package runners;
+
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
+
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {
@@ -12,9 +14,10 @@ import org.junit.runner.RunWith;
         },
         monochrome=true,
         features = "./src/test/resources/features",
-        glue = "stepdefinitions",
+        glue = {"stepdefinitions", "hooks"},
         dryRun = false,
-        tags = "@data_tables"
+        tags = "@admin_excel"
+
 )
 public class Runner {
 }
