@@ -10,13 +10,14 @@ import org.junit.runner.RunWith;
                 "pretty",
                 "html:target/default-cucumber-reports.html",
                 "json:target/json-reports/cucumber.json",
-                "junit:target/xml-report/cucumber.xml"
+                "junit:target/xml-report/cucumber.xml",
+                "rerun:target/failedRerun.txt"
         },
         monochrome=true,
         features = "./src/test/resources/features",
         glue = {"stepdefinitions", "hooks"},
         dryRun = false,
-        tags = "@admin_excel"
+        tags = "@data_tables_1"
 
 )
 public class Runner {
