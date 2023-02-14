@@ -23,5 +23,6 @@ public class DatabaseStepDefinitions {
         DBUtils.getResultset().next();//going to the next row
         Object object1 = DBUtils.getResultset().getObject(column);
         System.out.println(object1);
+        System.out.println(object1);
     }
 }
