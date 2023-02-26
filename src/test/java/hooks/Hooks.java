@@ -1,4 +1,5 @@
 package hooks;
+import base_urls.MedunnaBaseUrl;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
@@ -32,6 +33,10 @@ public class Hooks {
     @After("@smoke_tests")
     public void tearDownSmokeScenarios(){
         System.out.println("RUN FOR ONLY SMOKE TEST SCENARIOS");
+    }
+    @Before()
+    public void beforeApi(){
+        MedunnaBaseUrl.medunnaSetUp();
     }
 
 }

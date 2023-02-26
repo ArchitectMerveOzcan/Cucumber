@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="1.606" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="db_customer_testing" name="TC01_read_customer_ssn_info" time="1.438">
+<testsuite name="Cucumber" time="0.243" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="Room Creation" name="TC03_Post_Request" time="0.028">
+<failure/>
 <system-out><![CDATA[
-Given user connects to the application database.............................passed
+Given user sends post request for room data.................................undefined
+Then user gets the room data and validates..................................skipped
 ]]></system-out>
 </testcase>
 </testsuite>
